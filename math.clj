@@ -1,6 +1,8 @@
+(require '[clojure.string :as str])
+
 (def math_expression "5 + 5")
 
-(defn parse_expression [s] (clojure.string/split s #" "))
+(defn parse_expression [s] (str/split s #" "))
 
 (defn evaluate_expression [v]
     (cond
